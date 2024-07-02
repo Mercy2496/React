@@ -1,5 +1,5 @@
 import './App.css'
-import Employee from './components/employee'
+import Employee from './components/employee';
 import { useState } from "react";
 
 function App() {
@@ -7,6 +7,10 @@ function App() {
 
   return (
     <>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+      {/* <Example /> */}
       <div>
         <input type="text" onChange={(e) => {
           console.log(e.target.value);
