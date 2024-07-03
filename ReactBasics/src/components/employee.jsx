@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import EditEmployee from "./editEmployee";
 
 function Employee(props) {
@@ -15,7 +16,12 @@ function Employee(props) {
             <p className="text-slate-500 font-medium">{props.role}</p>
           </div>
 
-          <EditEmployee />
+          <EditEmployee
+            id={props.id}
+            name={props.name}
+            role={props.role}
+            updateEmployee={props.updateEmployee}
+          />
         </div>
       </div>
     </>
