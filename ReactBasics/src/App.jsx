@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Employee from "./components/employee";
 import AddEmployee from "./components/addEmployee";
+// import Header from "./components/header";
 
 function App() {
   const [employees, setEmployees] = useState([
@@ -55,7 +56,8 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="App">
+        {/* <Header /> */}
         <div className="flex flex-wrap justify-center">
           {employees.map((employee) => {
             return (
